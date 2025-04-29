@@ -1,0 +1,1 @@
+PDF: https://avhimaz.github.io/resume/resume.pdf
