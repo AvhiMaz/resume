@@ -1,0 +1,201 @@
+%-------------------------
+% Resume in Latex
+% Author : Avhi Mazumder
+% Based off of: https://github.com/AvhiMaz/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Avhi Mazumder} \\ \vspace{1pt}
+    \small (91) 700-289-2029 $|$ \href{mailto:avhimazumder5@gmail.com}{\underline{avhimazumder5@gmail}} $|$ 
+    \href{https://avhidotsol.xyz/}{\underline{avhidotsol.xyz}} $|$
+    \href{https://github.com/AvhiMaz}{\underline{github.com/AvhiMaz}} $|$
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Assam Downtown University}{Guwahati, Assam}
+      {Bachelor of Technology in Computer Science (GPA - 3.36 / 4.0)}{Aug. 2022 -- Present}
+    \resumeSubheading
+      {Vivekananda Kendra Vidyalaya}{Baragolai, Assam}
+      {12th in Science}{Mar. 2019 -- May 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Solanaturbine Advanced SVM Cohort}{Apr. 2025 -- Present}
+      {Participant}{Remote}
+      \resumeItemListStart
+        \resumeItem{Completed an advanced curriculum focused on Solana's Sealevel Virtual Machine (SVM), zero-dependency development, and on-chain systems design}
+        \resumeItem{Built, tested, and deployed native Solana programs using tools like Pinocchio, native rust and testing framework like mollusk}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Solanaturbine Builders' Cohort}{Jan. 2025 -- Mar 2025}
+      {Builder / Cohort Member}{Remote}
+    \resumeItemListStart
+      \resumeItem{Completed builder program focused on Solana smart contract development, SVM internals, and dApp architecture}
+      \resumeItem{Built 7–8 smart contracts throughout the cohort covering program design, testing, and deployment using Rust and Anchor}
+      \resumeItem{Developed Nestfolio as a capstone project — an AI-powered DAO governance platform}
+      \resumeItem{Used Bankrun for high-speed local simulation and testing of Solana programs}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Nestfolio} $|$ \emph{Anchor, Rust, Bankrun, Telegram Bot, React}}{Jan. 2025 -- Mar. 2025}
+          \resumeItemListStart
+            \resumeItem{Built an AI-powered DAO governance platform enabling users to query, summarize, and vote on proposals via a Telegram bot}
+    \resumeItem{Wrote Solana smart contracts using Anchor to manage DAO proposal state, voting logic, and on-chain execution}
+    \resumeItem{Used Bankrun for high-speed, local testing of smart contracts with full test coverage}
+    \resumeItem{Developed a React frontend for product landing page}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Blink Arena} $|$ \emph{Next.js, Prisma, MongoDB, Solana Blinks, TypeScript, Docker}}{Oct. 2024 -- Nov. 2024}
+          \resumeItemListStart
+                \resumeItem{Built a platform where users can host or join gaming tournaments directly through Solana Blinks}
+    \resumeItem{Integrated wallet-based authentication and instant tournament interactions via Solana Blinks for seamless UX}
+    \resumeItem{Won a \$1000 grant from Superteam for innovation in on-chain gaming infrastructure}
+    \resumeItem{Developed a scalable backend using Prisma and MongoDB, and styled the frontend with TailwindCSS}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Frontend}{: JavaScript, Typescript, Tailwind, React, Next} \\
+     \textbf{Backend}{: Node.js, Express.js, MongoDB} \\
+     \textbf{Web3}{: Anchor, Solana, Rust, Pinocchio, Bankrun, Mollusk} \\
+     \textbf{Tools}{: Git, Github, Docker, Vim, VS Code, Linux}
+    }}
+ \end{itemize}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Grant Reciepent (2x)} $|$ \emph{Solana Foundation and Superteam}}{}
+          \resumeItemListStart
+            \resumeItem{Awarded a total of \$3000 in grants for building Nestfolio and Blink Arena}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Member} $|$ \emph{Superteam India}}{}
+          \resumeItemListStart
+                \resumeItem{Selected to join Superteam as a member, a global network of top builders and contributors accelerating the adoption of Solana. Participate in bounties and grants, and build real-world on-chain products alongside the Solana community.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
