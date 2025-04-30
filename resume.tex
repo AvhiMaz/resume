@@ -1,5 +1,4 @@
 %-------------------------
-% Resume in Latex
 % Author : Avhi Mazumder
 % Based off of: https://github.com/AvhiMaz/resume
 % License : MIT
@@ -20,26 +19,12 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -52,16 +37,12 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -99,8 +80,6 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-
 \begin{document}
 
 %----------HEADING----------
@@ -115,14 +94,23 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
+
     \resumeSubheading
-      {Assam Downtown University}{Guwahati, Assam}
-      {Bachelor of Technology in Computer Science (GPA - 3.36 / 4.0)}{Aug. 2022 -- Present}
-    \resumeSubheading
-      {Vivekananda Kendra Vidyalaya}{Assam}
-      {12th in Science}{Mar. 2019 -- May 2021}
+      {Assam Down Town University}{Guwahati, Assam}
+      {Bachelor of Technology in Computer Science \newline GPA: 3.36 / 4.0}{Aug. 2022 -- Present}
+
   \resumeSubHeadingListEnd
 
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Frontend:} JavaScript, TypeScript, TailwindCSS, React, Next.js \\
+    \textbf{Backend:} Node.js, Express.js, MongoDB \\
+    \textbf{Web3:} Solana, Anchor, Rust, Pinocchio, Bankrun, Mollusk \\
+    \textbf{Tools:} Git, GitHub, Docker, Vim, VS Code, Linux
+  }}
+\end{itemize}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -133,69 +121,71 @@
       {Participant}{Remote}
       \resumeItemListStart
         \resumeItem{Completed an advanced cohort focused on Solana's Sealevel Virtual Machine (SVM), zero-dependency development, and on-chain systems design}
-        \resumeItem{Built, tested, and deployed native Solana programs using tools like Pinocchio, native rust and testing framework like mollusk}
+        \resumeItem{Built, tested, and deployed native Solana programs using tools like Pinocchio, native Rust, and testing frameworks like Mollusk}
       \resumeItemListEnd
-    \resumeSubheading
-      {Solanaturbine Builders' Cohort}{Jan. 2025 -- Mar 2025}
-      {Builder}{Remote}
-    \resumeItemListStart
-      \resumeItem{Completed builder program focused on Solana smart contract development, SVM internals, and dApp architecture}
-      \resumeItem{Built 7–8 smart contracts throughout the cohort covering program design, testing, and deployment using Rust and Anchor}
-      \resumeItem{Developed Nestfolio as a capstone project — an AI-powered DAO governance platform}
-      \resumeItem{Used Bankrun for high-speed local simulation and testing of Solana programs}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
 
+    \resumeSubheading
+      {Solanaturbine Builders' Cohort}{Jan. 2025 -- Mar. 2025}
+      {Builder}{Remote}
+      \resumeItemListStart
+        \resumeItem{Completed builder program focused on Solana smart contract development, SVM internals, and dApp architecture}
+        \resumeItem{Built 7–8 smart contracts covering program design, testing, and deployment using Rust and Anchor}
+        \resumeItem{Developed \textbf{Nestfolio} as a capstone project — an AI-powered DAO governance platform}
+        \resumeItem{Used Bankrun for high-speed local simulation and testing of Solana programs}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Nestfolio} $|$ \emph{Anchor, Rust, Bankrun, Telegram Bot, React}}{Jan. 2025 -- Mar. 2025}
-          \resumeItemListStart
-            \resumeItem{Built an AI-powered DAO governance platform enabling users to query, summarize, and vote on proposals via a Telegram bot}
-    \resumeItem{Wrote Solana smart contracts using Anchor to manage DAO proposal state, voting logic, and on-chain execution}
-    \resumeItem{Used Bankrun for high-speed, local testing of smart contracts with full test coverage}
-    \resumeItem{Developed a React frontend for product landing page}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Blink Arena} $|$ \emph{Next.js, Prisma, MongoDB, Solana Blinks, TypeScript, Docker}}{Oct. 2024 -- Nov. 2024}
-          \resumeItemListStart
-                \resumeItem{Built a platform where users can host or join gaming tournaments directly through Solana Blinks}
-    \resumeItem{Integrated wallet-based authentication and instant tournament interactions via Solana Blinks for seamless UX}
-    \resumeItem{Won a \$1000 grant from Superteam for innovation in on-chain gaming infrastructure}
-    \resumeItem{Developed a scalable backend using Prisma and MongoDB, and styled the frontend with TailwindCSS}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
 
+    \resumeProjectHeading
+      {\textbf{Nestfolio} $|$ \emph{Anchor, Rust, Bankrun, Telegram Bot, React}}{Jan. 2025 -- Mar. 2025}
+      \resumeItemListStart
+        \resumeItem{Built an AI-powered DAO governance platform enabling users to query, summarize, and vote on proposals via a Telegram bot}
+        \resumeItem{Wrote Solana smart contracts using Anchor to manage DAO proposal state, voting logic, and on-chain execution}
+        \resumeItem{Used Bankrun for high-speed, local testing of smart contracts with full test coverage}
+        \resumeItem{Developed a React frontend for product landing page}
+      \resumeItemListEnd
 
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Frontend}{: JavaScript, Typescript, Tailwind, React, Next} \\
-     \textbf{Backend}{: Node.js, Express.js, MongoDB} \\
-     \textbf{Web3}{: Anchor, Solana, Rust, Pinocchio, Bankrun, Mollusk} \\
-     \textbf{Tools}{: Git, Github, Docker, Vim, VS Code, Linux}
-    }}
- \end{itemize}
+    \resumeProjectHeading
+      {\textbf{Blink Arena} $|$ \emph{Next.js, Prisma, MongoDB, Solana Blinks, TypeScript, Docker}}{Oct. 2024 -- Nov. 2024}
+      \resumeItemListStart
+        \resumeItem{Built a platform where users can host or join gaming tournaments directly through Solana Blinks}
+        \resumeItem{Integrated wallet-based authentication and instant tournament interactions via Solana Blinks for seamless UX}
+        \resumeItem{Won a \$1000 grant from Superteam for innovation in on-chain gaming infrastructure}
+        \resumeItem{Developed a scalable backend using Prisma and MongoDB, and styled the frontend with TailwindCSS}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Viralxpost} $|$ \emph{TypeScript, React, MongoDB, Node.js, Express.js, Gemini API}}{Jun. 2024 -- Jul 2024}
+      \resumeItemListStart
+        \resumeItem{Built an AI-powered tweet generation tool that helps users craft viral posts optimized for engagement}
+        \resumeItem{Integrated Gemini’s language model via API to generate context-aware, high-impact tweet drafts}
+        \resumeItem{Designed a minimal, responsive frontend in TypeScript and deployed the app seamlessly on Vercel}
+        \resumeItem{Implemented user session handling and real-time prompt tuning for personalized tweet suggestions}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 %-----------ACHIEVEMENTS-----------
 \section{Achievements}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Grant Reciepent (2x)} $|$ \emph{Solana Foundation and Superteam}}{}
-          \resumeItemListStart
-            \resumeItem{Awarded a total of \$3000 in grants for building Nestfolio and Blink Arena}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Member} $|$ \emph{Superteam India}}{}
-          \resumeItemListStart
-                \resumeItem{Selected to join Superteam as a member, a global network of top builders and contributors accelerating the adoption of Solana. Participate in bounties and grants, and build real-world on-chain products alongside the Solana community.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Grant Recipient (2x)} $|$ \emph{Solana Foundation and Superteam}}{}
+      \resumeItemListStart
+        \resumeItem{Awarded a total of \$3000 in grants for building \textbf{Nestfolio} and \textbf{Blink Arena}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Member} $|$ \emph{Superteam India}}{}
+      \resumeItemListStart
+        \resumeItem{Selected to join Superteam, a global network of top builders accelerating the adoption of Solana. Actively participate in bounties, grants, and on-chain product development with the Solana community}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 
-
-%-------------------------------------------
 \end{document}
