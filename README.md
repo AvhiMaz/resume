@@ -1,1 +1,1 @@
-PDF: https://avhimaz.github.io/resume/resume.pdf
+https://avhi.in/r
