@@ -29,8 +29,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.1in}
 
 \urlstyle{same}
 
@@ -85,11 +85,9 @@
 
 %----------HEADING----------
 \begin{center}
-  \textbf{\Huge \scshape Avhi Mazumder} \\ \vspace{5pt}
-  \small Full Stack Solana Engineer \\ \vspace{5pt}
+  \textbf{\Huge \scshape Avhi Mazumder} \\ \vspace{3pt}
+  \small Cofounder \& CTO, ordr.trade $|$ Solana Engineer \\ \vspace{3pt}
   \small
-  \raisebox{-0.30\height}{\includegraphics[height=1em]{logos/phone.png}}\hspace{0.1em}
-  \href{(+91) 70028-92029}{\underline{(+91) 70028-92029}} $|$ \ 
   \raisebox{-0.30\height}{\includegraphics[height=1em]{logos/email.png}}\hspace{0.1em}
   \href{mailto:avhimazumder5@gmail.com}{\underline{avhimazumder5@gmail.com}} $|$ \ 
   \raisebox{-0.30\height}{\includegraphics[height=1em]{logos/website.png}}\hspace{0.1em}
@@ -106,11 +104,10 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-    \textbf{Frontend:} JavaScript, TypeScript, TailwindCSS, React, Next.js \\
-    \textbf{Backend:} Node.js, Express.js, MongoDB, Prisma ORM \\
-    \textbf{Web3 / Blockchain:} Solana, Rust, Anchor, Pinocchio, Bankrun, Mollusk, SPL tokens \\
-    \textbf{Testing \& Deployment:} Unit/integration/ testing, Solana Devnet/Mainnet deployment \\
-    \textbf{Tools:} Git, GitHub, Docker, Vim, VS Code, Linux
+    \textbf{Languages:} Rust, C, C++, TypeScript, JavaScript \\
+    \textbf{Web3 / Blockchain:} Solana, Anchor, Pinocchio, Bankrun, Mollusk, SPL tokens \\
+    \textbf{Frontend / Backend:} React, Next.js, TailwindCSS, Node.js, Express.js, MongoDB, Prisma ORM \\
+    \textbf{Tools \& Deployment:} Git, GitHub, Docker, Vim, VS Code, Linux, unit/integration testing, Solana Devnet/Mainnet deployment
   }}
 \end{itemize}
 
@@ -119,19 +116,19 @@
   \resumeSubHeadingListStart
 
    \resumeSubheading
-  {PirateCrewFun}{Jun. 2025 -- Present}
-  {Full Stack Solana Engineer}{USA, Remote}
+  {ordr.trade}{Mar. 2026 -- Present}
+  {Cofounder \& CTO}{Remote}
   \resumeItemListStart
-    \resumeItem{Lead Meteora integrations and build complex backend systems that power end-to-end mainnet smart contract implementations}
-    \resumeItem{Ship production-grade Solana programs with comprehensive on-chain testing, optimization, and frontend integration spanning the full product lifecycle}
+    \resumeItem{Cofounded ordr.trade and raised \$150K; ICO oversubscribed 6191\% with \$9.3M total commitment}
+    \resumeItem{Lead engineering as CTO, building the product end-to-end across protocol}
   \resumeItemListEnd
 
-    \resumeSubheading
-  {Solanaturbine Builders' and Advanced SVM Cohorts}{Various Dates}
-  {Builder}{Remote}
+   \resumeSubheading
+  {PirateCrewFun}{May. 2025 -- Nov. 2025}
+  {Full Stack Solana Engineer}{USA, Remote}
   \resumeItemListStart
-    \resumeItem{Completed advanced Solana architecture training covering runtime internals, Sealevel parallelization, account models, transaction processing, and low-level on-chain mechanics}
-    \resumeItem{Built 10+ production smart contracts using Rust and Anchor with focus on program optimization, secure cross-program invocations (CPI), and robust testing methodologies}
+    \resumeItem{Shipped mainnet Solana integrations and led the launchpad maths using Meteora's DAMM, DAMM v2, DLMM, and DBC}
+    \resumeItem{Designed high-throughput backends, build tools, and applications}
   \resumeItemListEnd
 
 
@@ -142,53 +139,56 @@
   \resumeSubHeadingListStart
 
     \resumeProjectHeading
-      {\textbf{Nestfolio} $|$ \href{https://www.avhidotsol.xyz/proof-of-work/nestfolio}{\underline{Link}}}{Jan. 2025 -- Mar. 2025}
+      {\textbf{pda} $|$ \href{https://github.com/AvhiMaz/pda}{\underline{Link}}}{}
       \resumeItemListStart
-        \resumeItem{Built an AI-powered DAO governance platform with 5+ production-grade Solana smart contracts using Anchor, managing proposal state and voting logic with rigorous security best practices}
-        \resumeItem{Implemented comprehensive test suites achieving 100\% code coverage using Bankrun and Bankrun integration tests; optimized compute costs and program robustness for high transaction throughput}
-        \resumeItem{Won \$2000 Solana Foundation grant for innovation in on-chain governance infrastructure; accelerated testing time by 60\% through optimized testing methodology}
+        \resumeItem{Computed SHA-256 of seeds and validated results against the ed25519 curve using OpenSSL bignum arithmetic}
+        \resumeItem{Implemented bump-seed search matching Agave's \texttt{find\_program\_address}, trying seeds 255 down to 1}
+        \resumeItem{Returned typed \texttt{pda\_status} codes instead of bare ints for precise error handling; 3+ GitHub stars}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Blink Arena} $|$ \href{https://www.avhidotsol.xyz/proof-of-work/blink-arena}{\underline{Link}}}{Oct. 2024 -- Nov. 2024}
+      {\textbf{turbine} $|$ \href{https://github.com/AvhiMaz/turbine}{\underline{Link}}}{}
       \resumeItemListStart
-        \resumeItem{Built a platform enabling users to host or join gaming tournaments via Solana Blinks, with instant wallet-based authentication and $<1s$ transaction latency}
-        \resumeItem{Handled 10+ tournament workflows with real-time data updates using Prisma ORM and MongoDB}
-        \resumeItem{Awarded \$1000 Superteam grant from among 150+ applicants for innovation in on-chain gaming infrastructure}
+        \resumeItem{Shredded raw transaction bytes into data and coding shreds, mirroring Solana's Turbine protocol}
+        \resumeItem{Validated shreds in parallel through a custom thread pool}
+        \resumeItem{Recovered lost shreds using Reed-Solomon erasure coding; 3+ GitHub stars}
       \resumeItemListEnd
 
-   \resumeProjectHeading
-  {\textbf{Native Solana Contracts (Pinocchio + Rust)} $|$ \href{https://www.avhidotsol.xyz/proof-of-work/native-and-pinocchio}{\underline{Link}}}{Various Dates}
-  \resumeItemListStart
-    \resumeItem{Built and deployed 6+ native Solana smart contracts using \textbf{Pinocchio}, a zero-dependency framework that bypasses the Solana Program Library (SPL)}
-  \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{scheduler} $|$ \href{https://github.com/AvhiMaz/scheduler}{\underline{Link}}}{}
+      \resumeItemListStart
+        \resumeItem{Prioritized transactions by fees, inspired by Solana's banking stage}
+        \resumeItem{Detected account conflicts using locks and executed non-conflicting transactions in parallel via a thread pool}
+        \resumeItem{Built entirely in C with no external scheduling libraries; 8+ GitHub stars}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Pinocchio AMM} $|$ \href{https://github.com/AvhiMaz/pinocchio-amm}{\underline{Link}}}{}
+      \resumeItemListStart
+        \resumeItem{Implemented a constant product AMM ($x \cdot y = k$) with LP token minting and burning}
+        \resumeItem{Built token swaps with configurable basis-point fees and add/remove liquidity flows}
+        \resumeItem{Built with Pinocchio, a zero-dependency native Solana framework, for optimal performance; 16+ GitHub stars}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Vec} $|$ \href{https://github.com/AvhiMaz/vec}{\underline{Link}}}{}
+      \resumeItemListStart
+        \resumeItem{Reimplemented \texttt{Vec<T>} with push/pop/insert/remove and amortized O(1) growth via pointer doubling}
+        \resumeItem{Built \texttt{AppendVec<T>}, a lock-free append-only vector using Release/Acquire atomics for concurrent readers}
+        \resumeItem{Followed the same pattern used in Agave's accounts-db append-vec; 5+ GitHub stars}
+      \resumeItemListEnd
 
 
   \resumeSubHeadingListEnd
 
 %-----------ACHIEVEMENTS-----------
 \section{Achievements}
-  \resumeSubHeadingListStart
-
-    \resumeProjectHeading
-      {\textbf{Grant Recipient (2x)} $|$ \emph{Solana Foundation and Superteam}}{}
-      \resumeItemListStart
-        \resumeItem{Awarded a total of \$3,000 in grants for building \textbf{Nestfolio} and \textbf{Blink Arena}}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Open Source Contributor} $|$ \emph{Core Solana Ecosystem}}{}
-      \resumeItemListStart
-        \resumeItem{Contributed bug fixes and feature enhancements to core Solana ecosystem projects (Agave, Anchor framework, etc). Merged PRs reviewed by senior Solana engineers. \href{https://www.avhi.in/proof-of-work?tab=core-contribution}{\underline{View contributions}}}
-      \resumeItemListEnd
-
-    \resumeProjectHeading 
-      {\textbf{Member} $|$ \emph{Superteam India}}{}
-      \resumeItemListStart
-        \resumeItem{Selected to join Superteam as a member, a global network of top builders accelerating the adoption of Solana. Actively participate in bounties, grants, and on-chain product development with the Solana community.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
+  \small
+  \noindent\textbullet\ \textbf{Solana Fellowship Graduate}, top 20 of 200+: Rust, validator internals, orderbooks, perps\par\vspace{3pt}
+  \noindent\textbullet\ \textbf{Winner, Solana Privacy Hackathon} (open \& Arcium tracks): private prediction market on Arcium\par\vspace{3pt}
+  \noindent\textbullet\ \textbf{Open Source Contributor} to Agave, Mollusk, Blueshift: merged cleanups and SVM test harness PRs\par\vspace{3pt}
+  \noindent\textbullet\ \textbf{Rektoff Rust Security Bootcamp}, selected 1 of 125: vulnerability patterns, fuzzing, invariant testing\par\vspace{3pt}
+  \noindent\textbullet\ \textbf{Superteam Member \& 3x Turbin3 Graduate}: 3 grants for OSS/ecosystem work; builder, advanced SVM, accelerator
 
 
 \end{document}
